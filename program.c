@@ -1,10 +1,30 @@
 #include <stdio.h>
 int main() {
+    /*Valeurs des variables*/
+    int speed = 260;
+    int alt = 10000; 
+    int cap = 230;
+    int QNH = 1013
+    int Radio = 108.70;
+    int ILS = 8.6;
 
+    /*Echelle Speed*/
+    int speed  = 260 - 40;
+    int speed  = 260 - 20;
+    int speed  = 260 + 20;
+    int speed  = 260 + 40
+
+    /* Echelle indicateur alt*/
+    int alt = 10000 - 1000
+    int alt = 10000 - 500
+    int alt = 10000 + 500
+    int alt = 10000 + 1000
+    
     printf(" ____________________________________________________ \n");
     printf("|    |  SPEED | G/S | LOC | CAT3 | A/THR |    ___    |\n");   
     printf("|    | THR CLB|     |     | DUAL | AP1+2 |   |       |\n");
     printf("|                                            | 6.    |\n");
+    /* speed / alt */
     printf("|    __kts__       .   °   .       ___ft___  | -  |  |\n");
     printf("|   |     _|    °______^_____ °   |  115_|   | 2. |  |\n");
     printf("|   |  280_|    /     __        ° |     _|   | -  |  |\n");
