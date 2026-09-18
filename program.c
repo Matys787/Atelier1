@@ -4,8 +4,9 @@ int main() {
     int speed = 260;
     int alt = 10000; 
     int cap = 230;
+    %4.f = 230;
     int QNH = 1013;
-    %.1f = QNH;
+    %.3f = QNH;
     double Radio = (108);
     %.2f = Radio;
     double ILS = 8;
@@ -22,33 +23,33 @@ int main() {
     %4d = speed4;
 
     /* Echelle indicateur alt*/
-    int alt1 = 10000 - 1000;
-    %1d = alt1;
-    int alt2 = 10000 - 500;
-    %2d = alt2;
-    int alt3 = 10000 + 500;
-    %3d = alt3;
-    int alt4 = 10000 + 1000;
-    %4d = alt4;
-    
+    int alt5 = 10000 - 1000;
+    %5d = alt5;
+    int alt6 = 10000 - 500;
+    %6d = alt6;
+    int alt7 = 10000 + 500;
+    %7d = alt7;
+    int alt8 = 10000 + 1000;
+    %8d = alt8;
+
     printf(" ____________________________________________________ \n");
     printf("|    |  SPEED | G/S | LOC | CAT3 | A/THR |    ___    |\n");   
     printf("|    | THR CLB|     |     | DUAL | AP1+2 |   |       |\n");
     printf("|                                            | 6.    |\n");
     printf("|    __kts__       .   °   .       ___ft___  | -  |  |\n");
-    printf("|   |     _|    °______^_____ °   |  %4d_|   | 2. |  |\n", alt4);
+    printf("|   |     _|    °______^_____ °   |  %8d_|   | 2. |  |\n", alt8);
     printf("|   |  %4d_|    /     __        ° |     _|   | -  |  |\n", speed4);
-    printf("|   |     _|   |   10____10   |   |  %3d_|___| 1. |  |\n", alt3);
+    printf("|   |     _|   |   10____10   |   |  %7d_|___| 1. |  |\n", alt7);
     printf("|   |  %3d_|   |----] __ [----| ° |     _|20 | - <|  |\n", speed3);
-    printf("|   |  %2d_|   |______________| ^ |   10800  |__  |  |\n", speed, alt);
+    printf("|   |  %2d_|   |______________| ^ |   10000  |__  |  |\n", speed, alt);
     printf("|   |  %2d_|   |      __      | ° |     _|80 |    |  |\n", speed2);
-    printf("|   |     _|   |   10____10   |   |  %2d_|___| -  |  |\n", alt2);
+    printf("|   |     _|   |   10____10   |   |  %6d_|___| -  |  |\n", alt6);
     printf("|   |  %1d_|    __20______20__/ ° |     _|   | 1. |  |\n", speed1);
-    printf("|   |______|_                     |______|_  | -  |  |\n", alt1);
+    printf("|   |______|_                     |__%5d_|_  | -  |  |\n", alt5);
     printf("|             °   °  <|>  °   °              | 2. |  |\n");
-    printf("|  IMNW    ________________________ QNH %d   | -  |  |\n", QNH);
+    printf("|  IMNW    ________________________ QNH %.3f | -  |  |\n", QNH);
     printf("|Radio %.2f|   |   |   | ^ |   |   |         | 6. /  |\n", Radio);
-    printf("|ILS %.1fNM|___24______23_____22___|         |___/   |\n", ILS);
+    printf("|ILS %.1fNM|___24____%4.f_____22___|         |___/   |\n", ILS);
     printf("|____________________________________________________|\n");
 
    return 0;
