@@ -1,11 +1,10 @@
 #include <stdio.h>
 int main() {
     printf(" ___________________________________________________ \n");
-    printf("|                                                   |\n");
     printf("|   |  SPEED | G/S | LOC | CAT3 | A/THR |    ___    |\n");   
     printf("|   | THR CLB|     |     | DUAL | AP1+2 |   |       |\n");
     printf("|                                           | 6.    |\n");
-    printf("|    __kt___      .   °   .       _27000__  | -  |  |\n");
+    printf("|    __kts__      .   °   .       ___ft___  | -  |  |\n");
     printf("|   |     _|   °______^_____ °   |  115_|   | 2. |  |\n");
     printf("|   |  280_|   /     __        ° |     _|   | -  |  |\n");
     printf("|   |     _|  |   10____10   |   |  110_|___| 1. |  |\n");
